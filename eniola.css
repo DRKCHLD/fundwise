@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/************
+  ADD EXPENSE POP-UP STYLING 
+*****************/
+.addExpensePopUp {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* overflow: hidden; */
+  background-color: rgb(0, 0, 0, 0.7);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+/* html {
+  font-size: 62.5%;
+} */
+/* .head {
+  display: flex;
+  gap: 67.5rem;
+  font-size: 2.5rem;
+  margin-left: 5.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 32px;
+  color: #171515;
+  word-wrap: break-word;
+} */
+.headbox {
+  background-color: #fff;
+  width: 85%;
+  height: 500px;
+  border-radius: 7px 7px 0 0;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #5a5a5a;
+  padding: 20px;
+}
+/* hr {
+  width: 100rem;
+} */
+.head h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+.head img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+/* .headbox {
+  background-color: #fff;
+  width: 90%;
+  height: 40%;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  margin-left: 26rem;
+  margin-top: 10rem;
+} */
+
+.flex-items {
+  /* background-color: skyblue; */
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  /* gap: 3rem;
+  margin-top: 10rem; */
+  padding: 0 30px;
+}
+.firstbox {
+  /* height: 33rem; */
+  max-width: 270px;
+  height: 320px;
+  /* border: 1px solid #ccc; */
+  border: 1px solid #213563;
+  text-align: center;
+  padding: 30px;
+  border-radius: 7px;
+  /* margin-left: 6rem; */
+}
+.firstbox:hover {
+  background-color: #213563;
+  transition: all ease-in-out 0.2s;
+}
+.firstbox:hover h2,
+.firstbox:hover p {
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+.firstbox img {
+  width: 100px;
+  height: 70px;
+  margin-bottom: 2rem;
+  /* border: 2px solid red; */
+}
+.firstbox:hover img {
+  filter: brightness(35) invert(0);
+}
+/* .firstbox img {
+  margin-top: 0.5rem;
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+} */
+.firstbox h2 {
+  /* flex: 1 1 0; */
+  /* text-align: center; */
+  color: #171515;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 1.8rem;
+  text-transform: capitalize;
+  /* word-wrap: break-word */
+}
+.firstbox p {
+  color: #171515;
+  font-family: Arial;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+.secondbox img {
+  width: 70px;
+  height: 75px;
+  /* border: 2px solid red; */
+  margin-bottom: 1.9rem;
+}
+.thirdbox img {
+  width: 65px;
+  height: 50px;
+  /* border: 2px solid red; */
+  margin-bottom: 2.5rem;
+  margin-top: 14px;
+}
+/* .secondbox {
+  height: 33rem;
+  border: 1px solid #ccc;
+  width: 27rem;
+}
+.secondbox:hover {
+  background-color: #213563;
+  color: #fff;
+}
+.secondbox img {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  margin-bottom: 4.5rem;
+} */
+/* To get a white img */
+/* .secondbox:hover img {
+  filter: brightness(45) invert(0);
+}
+.secondbox h2 {
+  flex: 1 1 0;
+  text-align: center;
+  color: #171515;
+  font-size: 2.4rem;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 2.5rem;
+  word-wrap: break-word;
+}
+.secondbox p {
+  flex: 1 1 0;
+  text-align: center;
+  color: #171515;
+  font-size: 1.9rem;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+.secondbox:hover h2,
+.secondbox:hover p {
+  color: #ffffff;
+}
+.thirdbox {
+  height: 33rem;
+  border: 1px solid #ccc;
+  width: 27rem;
+}
+.thirdbox:hover {
+  background-color: #213563;
+  color: #fff;
+}
+.thirdbox img {
+  margin-left: 11rem;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+}
+.thirdbox:hover img {
+  filter: brightness(35) invert(0);
+}
+.thirdbox h2 {
+  flex: 1 1 0;
+  text-align: center;
+  color: #171515;
+  font-size: 2.4rem;
+  font-family: Roboto;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 2.5rem;
+}
+.thirdbox p {
+  flex: 1 1 0;
+  text-align: center;
+  color: #171515;
+  font-size: 1.9rem;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+.thirdbox:hover h2,
+.thirdbox:hover p {
+  color: #ffffff;
+} */

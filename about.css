@@ -1,0 +1,513 @@
+about.css * {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+header {
+  min-height: 60rem;
+}
+.start {
+  width: 100%;
+  height: 4rem;
+  position: relative;
+  background: #171515;
+}
+.bgimage {
+  background-image: url(./images/bgimagea.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50rem;
+  background-position: top right;
+}
+.bgimage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 54rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.bgimage > * {
+  position: relative;
+  z-index: 2;
+}
+/* General Navbar Styling */
+.navbar {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 9rem;
+  padding-top: 1rem;
+  font-family: Arial;
+  padding-left: 10rem; /* Space before the logo */
+}
+
+/* Styles for each navigation item */
+.nav-item {
+  padding-left: 1rem;
+  margin-right: 48rem; /* Adjust to create space between the logo and first nav item */
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-item1 {
+  margin-right: 3rem; /* Adjust spacing between nav items */
+  font-size: 1.6rem;
+}
+
+/* Link Styles */
+.nav-item1 a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  padding: 0.5rem 1rem; /* Add padding for better spacing */
+  display: inline-block;
+}
+
+.nav-item1 a:hover {
+  background-color: #fff;
+  color: #213563;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem; /* Keep padding consistent on hover */
+}
+
+/* Login Button Styling */
+.nav-item2 {
+  margin-left: auto; /* Pushes the login button to the far right */
+  margin-right: 12rem;
+}
+
+.nav-item2 button {
+  border: 2px solid #fff;
+  width: 9rem;
+  height: 5rem; /* Adjust height to match other items */
+  font-size: 1.7rem;
+  background-color: #191b1f;
+  color: white;
+  border-radius: 2rem;
+  font-family: Arial;
+  font-weight: 700;
+}
+.nav-item2 a {
+  text-decoration: none;
+}
+.nav-item2:hover button {
+  display: block; /* Show button on hover */
+  color: #213563;
+  background-color: #fff;
+}
+
+/* Style for the logo image */
+.nav-logo {
+  height: 80%; /* Reduce logo height to fit within navbar */
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.abt {
+  text-align: center;
+  padding-top: 10rem;
+  font-size: 5rem;
+  font-family: Arial, sans-serif;
+  color: #fefeff;
+}
+.buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.buttons button {
+  font-size: 1.6rem;
+  padding: 8px;
+  margin-top: 6rem;
+  border-radius: 16px;
+  cursor: pointer;
+  /*Remember to change the font family to Roboto*/
+}
+.button1 {
+  background: #f79500;
+  font-family: Arial;
+  width: 15rem;
+  height: 6rem;
+  font-weight: 900;
+}
+.button2 {
+  border: 4px #fefeff solid;
+  background-color: #171515;
+  color: #fff;
+  font-family: Arial;
+  width: 17rem;
+  height: 6rem;
+  font-weight: 600;
+}
+.section1 {
+  height: 55rem;
+  display: flex;
+  gap: 22rem;
+  justify-content: center;
+  border-bottom: 1px solid rgb(150, 147, 147);
+}
+.first {
+  width: 40rem;
+  font-size: 2rem;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 3rem;
+  word-wrap: break-word;
+  margin-top: 4rem;
+}
+.software {
+  color: #306c59;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 2.1rem;
+}
+.first h2 {
+  margin-bottom: 4rem;
+  color: #213563;
+  font-size: 3.2rem;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 4rem;
+  word-wrap: break-word;
+}
+.application {
+  color: #171515;
+  width: 55rem;
+  font-size: 1.9rem;
+  line-height: 2.5rem;
+}
+hr {
+  color: #171515;
+}
+.section2 {
+  height: 210rem;
+  border-bottom: 1px solid rgb(150, 147, 147);
+}
+.feature {
+  line-height: 5rem;
+  margin-top: 10rem;
+}
+.feature h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.feature p {
+  font-size: 2rem;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  word-wrap: break-word;
+}
+.tracking,
+.budget,
+.goal,
+.insight {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.firsth2,
+.secondh2,
+.thirdh2,
+.fourthh2 {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  margin-top: 2.5rem;
+  color: #306c59;
+  font-family: Roboto;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+.firstp,
+.secondp,
+.thirdp,
+.fourthp {
+  width: 47rem;
+  font-size: 1.9rem;
+  color: #171515;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 2.5rem;
+  word-wrap: break-word;
+}
+.fButton,
+.sButton,
+.tButton,
+.fButton {
+  margin-top: 3rem;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: #213563;
+  color: #fff;
+  font-weight: 600;
+}
+.section3 {
+  height: 75rem;
+  border-bottom: 1px solid rgb(150, 147, 147);
+}
+.subscription {
+  text-align: center;
+  margin-top: 8rem;
+  font-size: 2rem;
+  line-height: 5rem;
+}
+.subscription h2 {
+  font-size: 4rem;
+}
+.flexdiv {
+  display: flex;
+  gap: 7rem;
+  justify-content: center;
+}
+
+.firstdiv,
+.seconddiv,
+.thirddiv {
+  height: 54rem;
+  width: 28rem;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  margin-top: 4rem;
+}
+
+.basicPlan,
+.standardPlan,
+.premiumPlan {
+  border-bottom: 1px solid #ccc;
+  padding-top: 1rem;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #213563;
+}
+/*Using JS for this will be easier cos there's no way i can focus on this hover*/
+.basicPlan:hover,
+.standardPlan:hover,
+.premiumPlan:hover {
+  background: linear-gradient(
+    90deg,
+    #213563 11%,
+    #1c6471 40%,
+    #169a80 74%,
+    #12c38c 99%
+  );
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  color: #fff;
+}
+.tick {
+  display: flex;
+  gap: 2rem;
+  margin-left: 3rem;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  margin-top: 1.5rem;
+}
+.tick img {
+  width: 2rem;
+  height: 1.5rem;
+  margin-top: 1rem;
+}
+.sePlan {
+  margin-top: 17rem;
+  margin-left: 2rem;
+  width: 24rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #213563;
+}
+.sePlan a {
+  text-decoration: none;
+}
+.sePlan:hover,
+.sePlan2:hover,
+.sePlan3:hover {
+  background: linear-gradient(
+    90deg,
+    #213563 11%,
+    #1c6471 40%,
+    #169a80 74%,
+    #12c38c 99%
+  );
+}
+.sePlan2 {
+  margin-top: 9rem;
+  margin-left: 2rem;
+  width: 24rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #213563;
+}
+.sePlan2 a {
+  text-decoration: none;
+}
+.sePlan3 {
+  margin-top: 4.5rem;
+  margin-left: 2rem;
+  width: 24rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #213563;
+}
+.sePlan3 a {
+  text-decoration: none;
+}
+.section4 {
+  height: 55rem;
+  background-image: url(./images/femalepresenter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.connect {
+  padding-top: 15rem;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.unlimited {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #fff;
+}
+.connectB {
+  width: 11rem;
+  height: 4.5rem;
+  border-radius: 1rem;
+  background-color: #f79500;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-top: 15rem;
+  margin-left: 63rem;
+}
+.section5 {
+  height: 110rem;
+  border-bottom: 1px solid rgb(150, 147, 147);
+}
+.client {
+  font-size: 3.5rem;
+  margin-top: 5rem;
+  text-align: center;
+  font-weight: 700;
+}
+.sarah,
+.james {
+  display: flex;
+  gap: 10rem;
+  margin-top: 8rem;
+  justify-content: center;
+}
+.decision,
+.report {
+  width: 50rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-top: 4rem;
+}
+.maris,
+.okoro {
+  font-size: 2.5rem;
+  margin-top: 4.5rem;
+}
+.section6 {
+  height: 30rem;
+}
+.trusted {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+}
+.trustimg {
+  margin-left: 25rem;
+  width: 100rem;
+}
+.section7 {
+  height: 65rem;
+  background-color: #030118;
+}
+.bars {
+  padding-top: 10rem;
+  display: flex;
+  gap: 17rem;
+  justify-content: center;
+  align-items: center;
+}
+.bars a {
+  text-decoration: none;
+  color: #fff;
+}
+.fFooter,
+.sFooter,
+.tFooter,
+.foFooter {
+  color: #edf2fd;
+  font-size: 1.9rem;
+  line-height: 4rem;
+}
+.fFooter h2,
+.sFooter h2,
+.tFooter h2,
+.foFooter h2 {
+  font-size: 2.5rem;
+}
+.fFooter a,
+.sFooter a,
+.tFooter a,
+.foFooter a {
+  text-decoration: none;
+  color: grey;
+}
+.foFooter {
+  margin-top: 3rem;
+}
+.logo2 {
+  margin-top: 5rem;
+  margin-left: 70rem;
+}
+.copyright {
+  margin-left: 65rem;
+  color: #edf2fd;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.social-icons {
+  display: flex;
+  gap: 1rem; /* Space between icons */
+  padding-left: 69rem;
+  padding-top: 3rem;
+}
+
+.social-icon {
+  color: #d0daf5;
+  font-size: 1.5rem; /* Adjust size as needed */
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.social-icon:hover {
+  color: #fff; /* Change color on hover */
+}

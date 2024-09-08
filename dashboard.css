@@ -1,0 +1,578 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "inter";
+}
+
+.dash-layout {
+  display: flex;
+  /* width: 100%; */
+  color: #ffffff;
+}
+
+.sidebar {
+  padding-top: 1.75rem;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100vh;
+  position: fixed;
+  background-color: #213563;
+}
+/* .dummy-width{
+  width: 25%;
+} */
+
+.dash-title {
+  display: flex;
+  gap: 0.5rem;
+  padding-left: 2.4375rem;
+}
+.dash-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9375rem;
+  width: 13rem;
+  height: 13rem;
+  margin-left: 0.5625rem;
+  /* margin-right: 0.875rem; */
+  padding: 1rem 0.4rem;
+  background-color: #ffffff;
+  color: #1e1e1e;
+  border: 10px solid #95e4cc;
+  border-radius: 50%;
+}
+.dash-account > span {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+
+  align-items: center;
+}
+.dash-account h3 {
+  font-size: 0.875rem;
+}
+.dash-nav-list {
+  background: rgb(22, 35, 66);
+  border-radius: 9px;
+  padding: 8% 4% 8% 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+
+  width: 80%;
+}
+.dash-nav {
+  display: flex;
+  gap: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  /* background-color: #95E4CC; */
+  border-radius: 1rem;
+  font-size: 1rem;
+  padding-left: 1.875rem;
+}
+
+.dash-nav a {
+  text-decoration: none;
+  color: white;
+}
+/* .dash-nav-dash {
+  background-color: #95e4cc;
+} */
+
+.dash-nav.nav_links:hover {
+  outline: 1px solid #95e4cc;
+}
+.dash-nav a:focus {
+  color: #fff;
+}
+
+.dash-content {
+  width: 75%;
+  margin-left: 25%;
+  background-color: #b5bccb;
+}
+.dash-content-real {
+  padding-top: 1.5rem;
+
+  padding-left: 1.75rem;
+  padding-right: 1.8125rem;
+}
+.dash-greet {
+  width: 100%;
+  padding-bottom: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(141, 135, 135);
+}
+
+.dash-greet h3 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 19px;
+  text-transform: capitalize;
+}
+.dash-menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.dash-greet-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #162342;
+}
+.greet-text {
+  display: flex;
+}
+.dash-greet-content span {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.budget-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.budget-action h3 {
+  color: #707378;
+}
+.budget-action a {
+  border-radius: 1rem;
+  border: none;
+  padding: 1rem 1.5313rem;
+  color: #ffffff;
+  background-color: #306c59;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+.budget-action a:hover {
+  background-color: #20483b;
+}
+.budget-action .bi-plus {
+  font-size: 1.1rem;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.disbursement-info {
+  display: flex;
+  gap: 0.9375rem;
+  padding: 0.875rem 1.25rem;
+  background-color: #eeeeee;
+  border-radius: 0.625rem;
+  margin-bottom: 2.1875rem;
+}
+.disbursement-info > p {
+  font-size: 1.25rem;
+  color: #464646;
+}
+.financial-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  margin-bottom: 2.1875rem;
+  padding: 1.5rem;
+  background-color: #213563;
+  border-radius: 0.625rem;
+}
+.financial-flow-title {
+  display: flex;
+  justify-content: space-between;
+}
+.financial-flow-title > span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.financial-flow-content {
+  display: flex;
+  justify-content: space-between;
+}
+.financial-flow-content > div {
+  background-color: #f4f4f4;
+  border-radius: 0.625rem;
+  padding: 1rem 1.875rem;
+}
+.financial-flow-content > div > span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125rem;
+  margin-bottom: 0.9375rem;
+  justify-content: flex-start;
+  align-items: start;
+}
+.total-income {
+  color: #948f8f;
+}
+.total-income-amount {
+  color: #1e1e1e;
+  font-size: 32px;
+}
+.expenses {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+.expenses-title {
+  display: flex;
+  background-color: #dff7f0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.75rem 1.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.expenses-title > h3 {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.expenses-title > a {
+  color: #007bff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.expenses-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefeff;
+  padding: 1rem 1.5rem;
+}
+
+.expenses-content-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  font-weight: 500;
+  color: #444;
+}
+
+.expenses-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: #fefeff;
+  color: #333;
+}
+
+.expenses-content > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+.expenses-content > div:hover {
+  background-color: #f9f9f9;
+}
+
+.expenses-content > div > span {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.expenses-content .col1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.col1 {
+  width: 23.25rem;
+  font-size: 1rem;
+}
+
+.col2,
+.col3,
+.col4,
+.col5 {
+  width: 6.8125rem;
+  font-size: 0.875rem;
+  color: #5a5a5a;
+}
+
+.col2,
+.col3,
+.col4 {
+  text-align: start;
+}
+
+.col5 {
+  text-align: end;
+  font-weight: 600;
+  color: #333;
+}
+
+.expenses-content .col2,
+.expenses-content .col3 {
+  color: #5a5a5a;
+}
+
+@media (max-width: 430px) {
+  html {
+    font-size: 70%;
+  }
+  .dash-menu {
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .dash-menu h3 {
+    display: none;
+  }
+
+  .dash-content {
+    margin-left: 0;
+  }
+  .dash-content-real {
+    padding-top: 1.5rem;
+
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .expenses-title {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1.5rem;
+  }
+
+  .expenses-content-title {
+    display: none;
+  }
+
+  .expenses-content > div {
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    gap: 0.5rem;
+  }
+
+  .col1,
+  .col2,
+  .col3,
+  .col4,
+  .col5 {
+    width: 100%;
+    text-align: left;
+  }
+  .col1 h4,
+  .col2 h4,
+  .col3 h4,
+  .col4 h4,
+  .col5 h4 {
+    font-size: 12px;
+  }
+
+  .col1 {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+
+  .col5 {
+    font-weight: 700;
+  }
+}
+
+.category {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.charts {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 2rem;
+  justify-content: space-between;
+  margin-top: 2.75rem;
+  margin-bottom: 3.5rem;
+  /* margin-right: 9.375rem; */
+}
+
+@media screen and (min-width: 1440px) {
+  /* .budget-action, .financial-flow, .expenses{
+      margin-right: 9.375rem;
+  } */
+
+  .financial-flow-content > div {
+    /* display: flex; */
+    /* flex-direction: column;
+      gap: 15px; */
+    background-color: #f4f4f4;
+    border-radius: 0.625rem;
+    padding: 1rem 3rem;
+  }
+  .dash-nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.625rem;
+    width: 16.0625rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #162342;
+    margin-left: 7.5rem;
+    margin-right: 2.4375rem;
+  }
+
+  .dash-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9375rem;
+    /* justify-content: center; */
+    margin-left: 7.5rem;
+    margin-right: 1.8125rem;
+    padding: 2.4375rem 1.75rem;
+    background-color: #ffffff;
+    color: #1e1e1e;
+    border: 0.625rem solid #95e4cc;
+    border-radius: 7.0938rem;
+  }
+  .dash-title {
+    display: flex;
+    gap: 0.5rem;
+    padding-left: 7.5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .charts img {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .dash-nav-list {
+    background: rgb(22, 35, 66);
+    border-radius: 9px;
+    padding: 4% 4% 4% 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    width: 70%;
+  }
+  .sidebar {
+    position: fixed;
+    left: -100%;
+    /* top: 70px; */
+    gap: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: var(--primcol); */
+    height: 100vh;
+    width: 50%;
+    background: rgb(22, 35, 66);
+    text-align: center;
+    transition: 0.3s;
+    z-index: 10;
+  }
+  .dash-account {
+    width: 12rem;
+    height: 12rem;
+  }
+  .sidebar.active {
+    left: 0;
+  }
+  .dash-content {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .bar {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+  }
+
+  .hamburger.active {
+    z-index: 10;
+    position: fixed;
+    right: 52%;
+    top: 3%;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .financial-flow-content {
+    display: flex;
+
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .sidebar {
+    position: fixed;
+    left: -100%;
+    /* top: 70px; */
+    gap: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primcol);
+    height: 100vh;
+    width: 100%;
+    background: rgb(22, 35, 66);
+    text-align: center;
+    transition: 0.3s;
+    z-index: 10;
+  }
+
+  .hamburger.active {
+    /* background-color: white; */
+    z-index: 10;
+    position: fixed;
+    right: 8%;
+    top: 5%;
+  }
+}
+@media screen and(max-width:321px) {
+  .expenses-content > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

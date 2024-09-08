@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Google Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css links -->
+    <link rel="stylesheet" href="manualInputMethod.css" />
+    <link rel="stylesheet" href="banksyncMethod.css" />
+    <link rel="stylesheet" href="eniola.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expense Tracking Summary Page</title>
+  </head>
+  <body id="trackSummary">
+    <section id="trackContainer">
+      <aside class="myAsideNav">
+        <i class="fa-solid fa-xmark"></i>
+        <div class="image">
+          <a href="index.html"
+            ><img src="assets/logo white.png" alt="fundwise picture"
+          /></a>
+        </div>
+        <div class="circle1">
+          <div class="circle2">
+            <div>
+              <i class="bi bi-bank"></i>
+              <p>account balance</p>
+              <h3>
+                <i class="fa-solid fa-naira-sign"></i>523,722
+                <i class="bi bi-eye"></i>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="navigation">
+          <a
+            data-active="dashboard"
+            href="dashboard.html"
+            class="nav-link nav_links"
+            ><img src="assets/Vector.png" alt="" />dashboard</a
+          >
+          <a data-active="budget" href="#" class="nav-link nav_links"
+            ><img
+              src="assets/arcticons_budgetbakers-wallet.png"
+              alt=""
+            />budget</a
+          >
+          <a
+            data-active="expense"
+            href="trackSumm.html"
+            class="nav-link nav_links"
+            ><img
+              src="assets/arcticons_day-to-day-expenses.png"
+              alt=""
+            />expense tracking</a
+          >
+          <a
+            data-active="statistics"
+            href="statistics.html"
+            class="nav-link nav_links"
+            ><img src="assets/Group (1).png" alt="" />statistics</a
+          >
+          <a
+            data-active="settings"
+            href="settings.html"
+            class="nav-link nav_links"
+            ><img src="assets/settings.png" alt="" />settings</a
+          >
+          <a data-active="logout" href="login.html" class="nav-link nav_links"
+            ><img src="assets/Icon.png" alt="" />log out</a
+          >
+        </div>
+      </aside>
+      <!-- RIGHT SIDE -->
+      <div class="trackCon">
+        <div class="first">
+          <button class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="sub1">
+            <h4>expenses</h4>
+            <input type="date" id="day" name="day" />
+          </div>
+
+          <div class="sub223">
+            <div class="sub2">
+              <p><span>hello,</span> ijeoma damsel</p>
+              <a href="notification.html"><i class="bi bi-bell"></i></a>
+              <a href="profile.html"
+                ><img src="assets/Ellipse 87.png" alt=""
+              /></a>
+            </div>
+            <input type="date" id="day" name="day" />
+          </div>
+        </div>
+
+        <div class="summaryNav">
+          <nav>
+            <a
+              data-active="trackSummary"
+              href="trackSumm.html"
+              class="second_nav"
+              >summary</a
+            >
+            <a data-active="banksync" href="bankSync.html" class="second_nav"
+              >bank sync</a
+            >
+            <a
+              data-active="manualInput"
+              href="man-Input.html"
+              class="second_nav"
+              >mannual input</a
+            >
+            <a
+              data-active="importFiles"
+              href="importedFiles.html"
+              class="second_nav"
+              >imported files</a
+            >
+          </nav>
+          <button type="button" class="sumBtn">add expenses</button>
+        </div>
+
+        <div id="ExpenseBars">
+          <div class="BarSub">
+            <div class="num1">
+              <div class="num01">
+                <h4><i class="bi bi-app yellow"></i>Last week</h4>
+                <h4>This week<i class="bi bi-app blue"></i></h4>
+              </div>
+              <div class="num011">
+                <h5>food</h5>
+                <h5>education</h5>
+                <h5>shopping</h5>
+                <h5>utilities</h5>
+                <h5>flex</h5>
+                <h5>healthcare</h5>
+              </div>
+            </div>
+            <div class="num2">
+              <p>120k</p>
+            </div>
+            <div class="num2">
+              <p>110k</p>
+            </div>
+            <div class="num2">
+              <p>95k</p>
+            </div>
+            <div class="num2">
+              <p>85k</p>
+            </div>
+            <div class="num2">
+              <p>75k</p>
+            </div>
+            <div class="num2">
+              <p>65k</p>
+            </div>
+            <div class="num2">
+              <p>55k</p>
+            </div>
+            <div class="num2">
+              <p>45k</p>
+            </div>
+            <div class="num2">
+              <p>35k</p>
+            </div>
+            <div class="num2">
+              <p>25k</p>
+            </div>
+            <div class="num2">
+              <p>15k</p>
+            </div>
+            <div class="num2">
+              <p>5k</p>
+            </div>
+            <div class="num011 num0111">
+              <h5>sun</h5>
+              <h5>tue</h5>
+              <h5>wed</h5>
+              <h5>thur</h5>
+              <h5>fri</h5>
+              <h5>sat</h5>
+            </div>
+
+            <div class="barChart barChart1">
+              <div class="chart1 yellow"></div>
+              <div class="chart2 blue"></div>
+            </div>
+            <div class="barChart barChart2">
+              <div class="chart3 yellow"></div>
+              <div class="chart4 blue"></div>
+            </div>
+            <div class="barChart barChart3">
+              <div class="chart5 yellow"></div>
+              <div class="chart6 blue"></div>
+            </div>
+            <div class="barChart barChart4">
+              <div class="chart7 yellow"></div>
+              <div class="chart8 blue"></div>
+            </div>
+            <div class="barChart barChart5">
+              <div class="chart9 yellow"></div>
+              <div class="chart10 blue"></div>
+            </div>
+            <div class="barChart barChart6">
+              <div class="chart11 yellow"></div>
+              <div class="chart12 blue"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="table">
+          <table id="packages">
+            <tr>
+              <th>latest transactions</th>
+              <th>time</th>
+              <th>source</th>
+              <th>category</th>
+              <th>amount</th>
+            </tr>
+            <tr>
+              <th>
+                <img src="assets/Frame 91.png" alt="netflix logo" />netflix
+              </th>
+              <td>10:25pm</td>
+              <td>bank</td>
+              <td><i class="bi bi-circle-fill one"></i>flex</td>
+              <td>
+                <span><i class="fa-solid fa-naira-sign"></i>2,500</span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <img src="assets/Frame 91 (1).png" alt="tools logo" />car tyre
+                repair
+              </th>
+              <td>08:16pm</td>
+              <td>bank</td>
+              <td><i class="bi bi-circle-fill two"></i>utilities</td>
+              <td>
+                <span><i class="fa-solid fa-naira-sign"></i>8,000</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-------------
+        ADD EXPENSE POP-UP 
+      ----------------->
+      <div class="addExpensePopUp">
+        <div class="headbox">
+          <div class="head">
+            <h1>add expense</h1>
+            <img src="assets/cancel.png" alt="cancel" class="popclose" />
+          </div>
+          <!-- <hr /> -->
+          <div class="flex-items">
+            <!-- Linkable to Bank Sync Page -->
+            <a href="#Bank Sync">
+              <div class="firstbox firstbox1">
+                <img
+                  src="assets/Frame_446-removebg-preview.png"
+                  alt="Bank Sync"
+                />
+                <h2>bank sync</h2>
+                <p>
+                  Synchronize your bank accounts to record your transactions
+                  automatically
+                </p>
+              </div>
+            </a>
+            <a href="manualInputMethod.html">
+              <div class="firstbox secondbox">
+                <img
+                  src="assets/Frame_449-removebg-preview.png"
+                  alt="Bank Sync"
+                />
+                <h2>manual input</h2>
+                <p>
+                  Personalize your transactions by manually inputting your
+                  information
+                </p>
+              </div>
+            </a>
+            <a href="#Bank Sync">
+              <div class="firstbox thirdbox">
+                <img src="assets/Group.png" alt="Bank Sync" />
+                <h2>import files</h2>
+                <p>
+                  Upload files by importing documents such as to update your
+                  expenses
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-------------
+        BANK SYNC METHOD POP UP
+      ----------------->
+      <div class="modal-body">
+        <div class="">
+          <div class="modal-title">
+            <h2>Add Account</h2>
+            <svg
+              class="sync-close"
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="red"
+              xmlns="http://www.w3.org/2000/svg"
+              style="cursor: pointer"
+            >
+              <path
+                d="M9.19935 20.6665L13.9993 15.8665L18.7994 20.6665L20.666 18.7998L15.866 13.9998L20.666 9.19984L18.7994 7.33317L13.9993 12.1332L9.19935 7.33317L7.33268 9.19984L12.1327 13.9998L7.33268 18.7998L9.19935 20.6665ZM13.9993 27.3332C12.1549 27.3332 10.4216 26.9832 8.79935 26.2832C7.17713 25.5832 5.76602 24.6332 4.56602 23.4332C3.36602 22.2332 2.41602 20.8221 1.71602 19.1998C1.01602 17.5776 0.666016 15.8443 0.666016 13.9998C0.666016 12.1554 1.01602 10.4221 1.71602 8.79984C2.41602 7.17762 3.36602 5.7665 4.56602 4.5665C5.76602 3.3665 7.17713 2.4165 8.79935 1.7165C10.4216 1.0165 12.1549 0.666504 13.9993 0.666504C15.8438 0.666504 17.5771 1.0165 19.1994 1.7165C20.8216 2.4165 22.2327 3.3665 23.4327 4.5665C24.6327 5.7665 25.5827 7.17762 26.2827 8.79984C26.9827 10.4221 27.3327 12.1554 27.3327 13.9998C27.3327 15.8443 26.9827 17.5776 26.2827 19.1998C25.5827 20.8221 24.6327 22.2332 23.4327 23.4332C22.2327 24.6332 20.8216 25.5832 19.1994 26.2832C17.5771 26.9832 15.8438 27.3332 13.9993 27.3332ZM13.9993 24.6665C16.9771 24.6665 19.4993 23.6332 21.566 21.5665C23.6327 19.4998 24.666 16.9776 24.666 13.9998C24.666 11.0221 23.6327 8.49984 21.566 6.43317C19.4993 4.3665 16.9771 3.33317 13.9993 3.33317C11.0216 3.33317 8.49935 4.3665 6.43268 6.43317C4.36602 8.49984 3.33268 11.0221 3.33268 13.9998C3.33268 16.9776 4.36602 19.4998 6.43268 21.5665C8.49935 23.6332 11.0216 24.6665 13.9993 24.6665Z"
+                fill="#171515"
+              />
+            </svg>
+          </div>
+
+          <div class="modal-content">
+            <form action="" method="post">
+              <div class="name">
+                <!-- <p>Name on card</p> -->
+                <label for=""
+                  >name on card
+                  <input
+                    type="text"
+                    name="fullName"
+                    id="fullName"
+                    placeholder="Full Name"
+                  />
+                </label>
+              </div>
+
+              <div class="cardNo">
+                <!-- <p>Card Number</p> -->
+                <label for=""
+                  >card number
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="**** **** **** ****"
+                  />
+                </label>
+              </div>
+
+              <div class="card-security">
+                <div>
+                  <!-- <p>Expiration date</p> -->
+                  <label for=""
+                    >expiration date
+                    <input type="datetime" name="" id="" placeholder="MM/YY" />
+                  </label>
+                </div>
+
+                <div>
+                  <!-- <p>Security code</p> -->
+                  <label for=""
+                    >security code
+                    <input type="text" placeholder="CVS" />
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="submit-button">Sync</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-------------
+        IMPORT FILE METHOD POP-UP 
+      ----------------->
+      <div class="import-file-method">
+        <div class="import-file-method-sub">
+          <div class="import-file-title">
+            <h2>import files</h2>
+            <svg
+              class="file-close"
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="red"
+              xmlns="http://www.w3.org/2000/svg"
+              style="cursor: pointer"
+            >
+              <path
+                d="M9.19935 20.6665L13.9993 15.8665L18.7994 20.6665L20.666 18.7998L15.866 13.9998L20.666 9.19984L18.7994 7.33317L13.9993 12.1332L9.19935 7.33317L7.33268 9.19984L12.1327 13.9998L7.33268 18.7998L9.19935 20.6665ZM13.9993 27.3332C12.1549 27.3332 10.4216 26.9832 8.79935 26.2832C7.17713 25.5832 5.76602 24.6332 4.56602 23.4332C3.36602 22.2332 2.41602 20.8221 1.71602 19.1998C1.01602 17.5776 0.666016 15.8443 0.666016 13.9998C0.666016 12.1554 1.01602 10.4221 1.71602 8.79984C2.41602 7.17762 3.36602 5.7665 4.56602 4.5665C5.76602 3.3665 7.17713 2.4165 8.79935 1.7165C10.4216 1.0165 12.1549 0.666504 13.9993 0.666504C15.8438 0.666504 17.5771 1.0165 19.1994 1.7165C20.8216 2.4165 22.2327 3.3665 23.4327 4.5665C24.6327 5.7665 25.5827 7.17762 26.2827 8.79984C26.9827 10.4221 27.3327 12.1554 27.3327 13.9998C27.3327 15.8443 26.9827 17.5776 26.2827 19.1998C25.5827 20.8221 24.6327 22.2332 23.4327 23.4332C22.2327 24.6332 20.8216 25.5832 19.1994 26.2832C17.5771 26.9832 15.8438 27.3332 13.9993 27.3332ZM13.9993 24.6665C16.9771 24.6665 19.4993 23.6332 21.566 21.5665C23.6327 19.4998 24.666 16.9776 24.666 13.9998C24.666 11.0221 23.6327 8.49984 21.566 6.43317C19.4993 4.3665 16.9771 3.33317 13.9993 3.33317C11.0216 3.33317 8.49935 4.3665 6.43268 6.43317C4.36602 8.49984 3.33268 11.0221 3.33268 13.9998C3.33268 16.9776 4.36602 19.4998 6.43268 21.5665C8.49935 23.6332 11.0216 24.6665 13.9993 24.6665Z"
+                fill="#171515"
+              />
+            </svg>
+          </div>
+          <div>
+            <div class="sub-div1">
+              <div class="import-file-content">
+                <form action="" method="post">
+                  <div class="name">
+                    <!-- <p>Name on card</p> -->
+                    <label for=""
+                      >narration
+                      <input
+                        type="text"
+                        name="fullName"
+                        id="fullName"
+                        placeholder="add description"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="card-security">
+                    <div>
+                      <!-- <p>Expiration date</p> -->
+                      <label for=""
+                        >category
+                        <select name="syncCategory" id="syncCategory">
+                          <option value="category">category</option>
+                          <option value="food">food</option>
+                          <option value="utilities">Utilities</option>
+                          <option value="healthcare">Healthcare</option>
+                          <option value="shopping">Shopping</option>
+                          <option value="education">Education</option>
+                        </select>
+                      </label>
+                    </div>
+
+                    <div>
+                      <!-- <p>Security code</p> -->
+                      <label for=""
+                        >amount
+                        <input
+                          type="number"
+                          name="amount"
+                          id="amount"
+                          placeholder="00:00 ngn"
+                        />
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="card-security">
+                    <div>
+                      <!-- <p>Expiration date</p> -->
+                      <label for=""
+                        >time
+                        <input
+                          type="time"
+                          name="des-time"
+                          id="des-time"
+                          placeholder="00:00"
+                        />
+                      </label>
+                    </div>
+
+                    <div>
+                      <!-- <p>Security code</p> -->
+                      <label for=""
+                        >date
+                        <input type="date" name="" id="" />
+                      </label>
+                    </div>
+                  </div>
+
+                  <button type="button" class="submit-button">save</button>
+                </form>
+              </div>
+            </div>
+            <div class="import-file-image">
+              <img src="assets/Frame 568.png" alt="download picture" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- font Awesome Icon -->
+    <script
+      src="https://kit.fontawesome.com/d84f9ea30a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

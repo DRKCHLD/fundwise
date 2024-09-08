@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #b5bccb;
+}
+.trackCon.stat_track {
+  /* background-color: palevioletred; */
+  padding: 0 100px 0 35px;
+}
+#trackContainer .trackCon .first {
+  padding: 15px 0 8px 0;
+  border-bottom: 1px solid #717171;
+}
+.stat_period label {
+  color: #1e1e1e;
+  font-family: "Open San" s;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 19px;
+  text-transform: capitalize;
+}
+.stat_period {
+  padding: 12px 0 12px 0;
+  width: 35%;
+  /* display: block; */
+}
+.stat_period input {
+  padding: 12px;
+  /* display: block; */
+}
+.statisticsBar {
+  padding: 8px 0 8px 0;
+  /* background-color: skyblue; */
+  /* max-width: 600px; */
+}
+.statisticsBar .statistic_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 40px;
+}
+.statisticsBar .statistic_bar2 {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.statisticsBar .stat_sub {
+  max-width: 400px;
+  /* width: 40%; */
+  /* height: 250px; */
+  /* background-color: red; */
+  /* margin-left: 40px; */
+}
+.statisticsBar .stat_sub img {
+  width: 100%;
+  height: 100%;
+}
+.statisticsBar .statistics_income {
+  max-width: 400px;
+  background-color: #fff;
+  height: fit-content;
+  padding: 15px 5px 25px;
+  border-radius: 10px;
+}
+.statisticsBar .statistics_income h2 {
+  color: #058240;
+  font-family: "Open Sans";
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 19px;
+  text-transform: capitalize;
+  margin: 0 0 0 5px;
+}
+.statisticsBar .statistics_income > img {
+  /* max-width: 350px; */
+  width: 100%;
+  height: 235px;
+}
+.statistics_income .stat_content {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  padding: 0 0 0 30px;
+}
+.stat_content.stat_content2 tr td:last-child {
+  /* color: red; */
+  text-align: right;
+  padding-right: 10px;
+}
+.statisticsBar .stat_content table {
+  width: 100%;
+}
+.statisticsBar .stat_content td {
+  color: #171717;
+  font-family: "Open Sans";
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: capitalize;
+  height: 35px;
+  /* background-color: red; */
+}
+/* .statisticsBar .stat_content h5,
+.stat_content span,
+.stat_content p {
+  color: #171717;
+  font-family: "Open Sans";
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: capitalize;
+} */
+.stat_content img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 7px;
+}
+/* .stat_content h5 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+} */
+.stat_content span {
+  color: #686868;
+}
+.stat_content .span1 {
+  font-size: 0.9rem;
+  color: #171717;
+  vertical-align: middle;
+  text-decoration: line-through;
+}
+.stat_content button {
+  font-family: "Open Sans";
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+/* .statisticsBar .statistics_income table {
+  width: 100%;
+}
+.statisticsBar .statistics_income table td {
+  border: 1px solid red;
+} */
+/* .ExpenseBars .statistic_bar div:first-child {
+  background-image: url("assets/Frame\ 163.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 1330px) {
+  /* body {
+    background-color: pink;
+  } */
+  .statisticsBar .stat_sub,
+  .statisticsBar .statistics_income {
+    max-width: 350px;
+  }
+  .trackCon.stat_track {
+    padding: 0 30px 0 25px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* body {
+    background-color: brown;
+  } */
+  .statisticsBar .stat_sub,
+  .statisticsBar .statistics_income {
+    max-width: 300px;
+  }
+  /* .trackCon.stat_track {
+    padding: 0 40px 0 25px;
+  } */
+}
+@media screen and (max-width: 1035px) {
+  /* body {
+    background-color: green;
+  } */
+  .statisticsBar .stat_sub,
+  .statisticsBar .statistics_income {
+    max-width: 400px;
+  }
+  .trackCon.stat_track {
+    padding: 0 30px 0 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* body {
+    background-color: orangered;
+  } */
+  .statistic_bar,
+  .statistic_bar2 {
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+  .statistic_bar2 div {
+    margin: auto;
+    margin-bottom: 40px;
+    /* width: 70%; */
+    /* justify-content: center; */
+  }
+  .statistic_bar div:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 900px) {
+  body {
+    background-color: red;
+  }
+} */

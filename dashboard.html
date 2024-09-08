@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+    <title>Dashboard</title>
+  </head>
+  <body id="dashboard">
+    <div class="dash-layout">
+      <aside class="myAsideNav">
+        <i class="fa-solid fa-xmark"></i>
+        <div class="image">
+          <a href="index.html"
+            ><img src="assets/logo white.png" alt="fundwise picture"
+          /></a>
+        </div>
+        <div class="circle1">
+          <div class="circle2">
+            <div>
+              <i class="bi bi-bank"></i>
+              <p>account balance</p>
+              <h3>
+                <i class="fa-solid fa-naira-sign"></i>523,722
+                <i class="bi bi-eye"></i>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="navigation">
+          <a
+            data-active="dashboard"
+            href="dashboard.html"
+            class="nav-link nav_links"
+            ><img src="assets/Vector.png" alt="" />dashboard</a
+          >
+          <a data-active="budget" href="#" class="nav-link nav_links"
+            ><img
+              src="assets/arcticons_budgetbakers-wallet.png"
+              alt=""
+            />budget</a
+          >
+          <a data-active="expense" href="trackSumm.html" class="nav-link nav_links"
+            ><img
+              src="assets/arcticons_day-to-day-expenses.png"
+              alt=""
+            />expense tracking</a
+          >
+          <a data-active="statistics" href="statistics.html" class="nav-link nav_links"
+            ><img src="assets/Group (1).png" alt="" />statistics</a
+          >
+          <a data-active="settings" href="settings.html" class="nav-link nav_links"
+            ><img src="assets/settings.png" alt="" />settings</a
+          >
+          <a data-active="logout" href="login.html" class="nav-link nav_links"
+            ><img src="assets/Icon.png" alt="" />log out</a
+          >
+        </div>
+      </aside>
+      <!-- <div class="sidebar" id="sidebar">
+        <div class="dash-title">
+          <img src="images/fundwiseLogo.png" alt="fundwiseLogo" />
+          <h3>FUNDWISE</h3>
+        </div>
+
+        <div class="dash-account">
+          <img src="images/bank.svg" alt="" />
+          <h3>ACCOUNT BALANCE</h3>
+          <span>
+            <h3>N523,722</h3>
+            <img src="images/eye.svg" alt="" />
+          </span>
+        </div>
+
+        <div class="dash-nav-list">
+          <span class="dash-nav dash-nav-dash nav_links">
+            <img src="images/material-symbols_dashboard-outline.png" alt="" />
+
+            <h4><a href="#">Dashboard</a></h4>
+          </span>
+
+          <span class="dash-nav nav_links">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="#213563"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.2255 14.957V17.9035C21.2256 18.1627 21.1746 18.4193 21.0755 18.6587C20.9763 18.8982 20.831 19.1157 20.6478 19.299C20.4646 19.4823 20.2471 19.6276 20.0077 19.7268C19.7682 19.826 19.5116 19.877 19.2525 19.877H4.223C3.96386 19.877 3.70726 19.826 3.46785 19.7268C3.22844 19.6276 3.01092 19.4823 2.8277 19.299C2.64449 19.1157 2.49917 18.8982 2.40004 18.6587C2.30092 18.4193 2.24993 18.1627 2.25 17.9035V6.09655C2.24993 5.83736 2.30094 5.58071 2.40009 5.34124C2.49924 5.10178 2.64461 4.88419 2.82788 4.70092C3.01115 4.51766 3.22873 4.37229 3.4682 4.27314C3.70766 4.17398 3.96432 4.12298 4.2235 4.12305H19.2525C19.5116 4.12305 19.7682 4.1741 20.0077 4.27328C20.2471 4.37246 20.4646 4.51784 20.6478 4.7011C20.831 4.88436 20.9763 5.10193 21.0755 5.34136C21.1746 5.58079 21.2256 5.83741 21.2255 6.09655V9.14555"
+                stroke="#FEFEFF"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21.1463 14.9626H15.9618C15.5795 14.9628 15.2009 14.8876 14.8476 14.7413C14.4944 14.5951 14.1734 14.3807 13.9031 14.1103C13.6328 13.84 13.4183 13.519 13.2721 13.1658C13.1259 12.8125 13.0507 12.434 13.0508 12.0516C13.0506 11.6693 13.1257 11.2906 13.272 10.9373C13.4182 10.584 13.6326 10.263 13.9029 9.99263C14.1733 9.72224 14.4942 9.50778 14.8475 9.3615C15.2008 9.21523 15.5794 9.14001 15.9618 9.14014H21.1468C21.4793 9.14014 21.7493 9.41014 21.7493 9.74314V14.3601C21.7493 14.6926 21.4793 14.9626 21.1463 14.9626Z"
+                stroke="#FEFEFF"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M16.2295 13.4379C16.9764 13.4379 17.582 12.8324 17.582 12.0854C17.582 11.3384 16.9764 10.7329 16.2295 10.7329C15.4825 10.7329 14.877 11.3384 14.877 12.0854C14.877 12.8324 15.4825 13.4379 16.2295 13.4379Z"
+                stroke="#FEFEFF"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h4><a href="#">Budget</a></h4>
+          </span>
+
+          <span class="dash-nav nav_links">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="#213563"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.69339 4.82397C5.64468 3.85013 6.78128 3.07657 8.03622 2.54888C9.29115 2.0212 10.639 1.75007 12.0004 1.75147C17.6474 1.75147 22.2254 6.32897 22.2254 11.976C22.2254 17.623 17.6474 22.201 12.0004 22.201C6.35339 22.201 1.77539 17.623 1.77539 11.976C1.77539 10.003 2.33489 8.16047 3.30289 6.59797"
+                stroke="#FEFEFF"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15.4103 11.9119C15.4103 12.2028 15.2947 12.4818 15.0891 12.6874C14.8834 12.8931 14.6044 13.0087 14.3135 13.0087C14.0227 13.0087 13.7437 12.8931 13.538 12.6874C13.3323 12.4818 13.2168 12.2028 13.2168 11.9119C13.2168 11.3064 13.7078 10.8154 14.3133 10.8154C14.9188 10.8154 15.4103 11.3064 15.4103 11.9119Z"
+                stroke="#FEFEFF"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12.3246 8.52003H17.6796C18.0482 8.51924 18.402 8.66485 18.6632 8.92485C18.9244 9.18486 19.0717 9.53797 19.0726 9.90653V13.9115C19.0733 14.2801 18.9276 14.6338 18.6675 14.895C18.4074 15.1561 18.0542 15.3032 17.6856 15.304H12.3246C11.9561 15.3048 11.6023 15.1592 11.3411 14.8992C11.0798 14.6392 10.9326 14.2861 10.9316 13.9175V9.91253C10.9312 9.72999 10.9668 9.54917 11.0363 9.38037C11.1058 9.21158 11.2078 9.05813 11.3366 8.92877C11.4654 8.79942 11.6184 8.6967 11.7869 8.62649C11.9554 8.55627 12.1361 8.51992 12.3186 8.51953L12.3246 8.52003Z"
+                stroke="#FEFEFF"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17.9246 15.2808V16.6558C17.9251 16.8384 17.8896 17.0192 17.8201 17.188C17.7507 17.3568 17.6487 17.5103 17.52 17.6397C17.3912 17.7691 17.2382 17.8719 17.0698 17.9422C16.9013 18.0125 16.7206 18.0489 16.5381 18.0493H7.20461C7.02207 18.0497 6.84124 18.0142 6.67245 17.9447C6.50366 17.8752 6.3502 17.7731 6.22085 17.6443C6.0915 17.5155 5.98878 17.3625 5.91856 17.194C5.84835 17.0255 5.812 16.8449 5.81161 16.6623V7.29583C5.81121 7.1133 5.84678 6.93247 5.91627 6.76368C5.98576 6.59488 6.08781 6.44143 6.21661 6.31208C6.3454 6.18272 6.49842 6.08001 6.66691 6.00979C6.8354 5.93957 7.01607 5.90323 7.19861 5.90283H16.5311C16.8997 5.90217 17.2534 6.04791 17.5145 6.30801C17.7757 6.56811 17.9228 6.92127 17.9236 7.28983V8.54183M0.724609 8.28133L3.42211 6.30533L3.78461 9.62933"
+                stroke="#FEFEFF"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <h4><a href="#">Expense Tracking</a></h4>
+          </span>
+
+          <span class="dash-nav nav_links">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="#213563"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 3V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H21"
+                stroke="#FEFEFF"
+                stroke-width="2"
+                stroke-miterlimit="5.759"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7 14L11 10L15 14L21 8"
+                stroke="#FEFEFF"
+                stroke-width="2"
+                stroke-miterlimit="5.759"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M18 8H21V11"
+                stroke="#FEFEFF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <h4><a href="#">Statistics</a></h4>
+          </span>
+
+          <span class="dash-nav nav_links">
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="#213563"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.24922 20L7.84922 16.8C7.63255 16.7167 7.42839 16.6167 7.23672 16.5C7.04505 16.3833 6.85755 16.2583 6.67422 16.125L3.69922 17.375L0.949219 12.625L3.52422 10.675C3.50755 10.5583 3.49922 10.4458 3.49922 10.3375V9.6625C3.49922 9.55417 3.50755 9.44167 3.52422 9.325L0.949219 7.375L3.69922 2.625L6.67422 3.875C6.85755 3.74167 7.04922 3.61667 7.24922 3.5C7.44922 3.38333 7.64922 3.28333 7.84922 3.2L8.24922 0H13.7492L14.1492 3.2C14.3659 3.28333 14.5701 3.38333 14.7617 3.5C14.9534 3.61667 15.1409 3.74167 15.3242 3.875L18.2992 2.625L21.0492 7.375L18.4742 9.325C18.4909 9.44167 18.4992 9.55417 18.4992 9.6625V10.3375C18.4992 10.4458 18.4826 10.5583 18.4492 10.675L21.0242 12.625L18.2742 17.375L15.3242 16.125C15.1409 16.2583 14.9492 16.3833 14.7492 16.5C14.5492 16.6167 14.3492 16.7167 14.1492 16.8L13.7492 20H8.24922ZM9.99922 18H11.9742L12.3242 15.35C12.8409 15.2167 13.3201 15.0208 13.7617 14.7625C14.2034 14.5042 14.6076 14.1917 14.9742 13.825L17.4492 14.85L18.4242 13.15L16.2742 11.525C16.3576 11.2917 16.4159 11.0458 16.4492 10.7875C16.4826 10.5292 16.4992 10.2667 16.4992 10C16.4992 9.73333 16.4826 9.47083 16.4492 9.2125C16.4159 8.95417 16.3576 8.70833 16.2742 8.475L18.4242 6.85L17.4492 5.15L14.9742 6.2C14.6076 5.81667 14.2034 5.49583 13.7617 5.2375C13.3201 4.97917 12.8409 4.78333 12.3242 4.65L11.9992 2H10.0242L9.67422 4.65C9.15755 4.78333 8.67839 4.97917 8.23672 5.2375C7.79505 5.49583 7.39089 5.80833 7.02422 6.175L4.54922 5.15L3.57422 6.85L5.72422 8.45C5.64089 8.7 5.58255 8.95 5.54922 9.2C5.51589 9.45 5.49922 9.71667 5.49922 10C5.49922 10.2667 5.51589 10.525 5.54922 10.775C5.58255 11.025 5.64089 11.275 5.72422 11.525L3.57422 13.15L4.54922 14.85L7.02422 13.8C7.39089 14.1833 7.79505 14.5042 8.23672 14.7625C8.67839 15.0208 9.15755 15.2167 9.67422 15.35L9.99922 18ZM11.0492 13.5C12.0159 13.5 12.8409 13.1583 13.5242 12.475C14.2076 11.7917 14.5492 10.9667 14.5492 10C14.5492 9.03333 14.2076 8.20833 13.5242 7.525C12.8409 6.84167 12.0159 6.5 11.0492 6.5C10.0659 6.5 9.23672 6.84167 8.56172 7.525C7.88672 8.20833 7.54922 9.03333 7.54922 10C7.54922 10.9667 7.88672 11.7917 8.56172 12.475C9.23672 13.1583 10.0659 13.5 11.0492 13.5Z"
+                fill="#FEFEFF"
+              />
+            </svg>
+
+            <h4><a href="#">Settings</a></h4>
+          </span>
+
+          <span class="dash-nav nav_links">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="#213563"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9M16 17L21 12M21 12L16 7M21 12H9"
+                stroke="#FEFEFF"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <h4><a href="#">Log out</a></h4>
+          </span>
+        </div>
+      </div> -->
+
+      <div class="dash-content">
+        <!-- <div class="dummy-width"></div> -->
+        <div class="dash-content-real">
+          <div class="dash-greet">
+            <div class="dash-menu">
+              <h3>Dashboard</h3>
+              <div class="hamburger" id="hamburger" onclick="menu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <div class="dash-greet-content">
+              <p class="greet-text">Hello,<span> Ijeoma Damsel</span></p>
+              <span>
+                <a href="notification.html"
+                  ><img src="images/notification.svg" alt=""
+                /></a>
+                <a href="profile.html"
+                  ><img src="images/profile.png" alt=""
+                /></a>
+              </span>
+            </div>
+          </div>
+
+          <div class="budget-action">
+            <h3>Ready to Budget?</h3>
+            <a href="#"><i class="bi bi-plus"></i>Create Budget</a>
+          </div>
+
+          <div class="disbursement-info">
+            <img src="images/info.svg" alt="" />
+            <p>
+              Your next disbursement is N 200,000 on 05/05/2025 from Gadget.
+            </p>
+          </div>
+
+          <div class="financial-flow">
+            <div class="financial-flow-title">
+              <h3>Financial Flow</h3>
+              <span>
+                <p>Filter by date</p>
+                <img src="images/arrowDown.svg" alt="" />
+              </span>
+            </div>
+
+            <div class="financial-flow-content">
+              <div>
+                <span>
+                  <img src="images/income1.png" alt="" />
+                  <p class="total-income">Total income</p>
+                  <h4 class="total-income-amount">N 500,000</h4>
+                </span>
+                <img src="images/loader.png" alt="" />
+              </div>
+
+              <div>
+                <span>
+                  <img src="images/income2.png" alt="" />
+                  <p class="total-income">Total income</p>
+                  <h4 class="total-income-amount">N 750,000</h4>
+                </span>
+                <img src="images/loader.png" alt="" />
+              </div>
+
+              <div>
+                <span>
+                  <img src="images/income3.png" alt="" />
+                  <p class="total-income">Total income</p>
+                  <h4 class="total-income-amount">N 200,000</h4>
+                </span>
+                <img src="images/loader.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="expenses">
+            <div class="expenses-title">
+              <h3>Expenses</h3>
+
+              <a href="#">Show more</a>
+            </div>
+
+            <div class="expenses-container">
+              <div class="expenses-content-title">
+                <h3 class="col1">Latest transactions</h3>
+                <h3 class="col2">Time</h3>
+                <h3 class="col3">Source</h3>
+                <h3 class="col4">Category</h3>
+                <h3 class="col5">Amount</h3>
+              </div>
+
+              <div class="expenses-content">
+                <div>
+                  <span class="col1">
+                    <img src="images/netflix.png" alt="" />
+                    <h4>Netflix</h4>
+                  </span>
+                  <p class="col2">10:25pm</p>
+                  <p class="col3">Bank</p>
+                  <span class="col4 category">
+                    <img src="images/flex.png" alt="" />
+                    <p>Flex</p>
+                  </span>
+                  <p class="col5">#2,500</p>
+                </div>
+
+                <div>
+                  <span class="col1">
+                    <img src="images/repair.png" alt="" />
+                    <h4>Car tyre repair</h4>
+                  </span>
+                  <p class="col2">08:16pm</p>
+                  <p class="col3">Bank</p>
+                  <span class="col4 category">
+                    <img src="images/utilities.png" alt="" />
+                    <p>Utilities</p>
+                  </span>
+                  <p class="col5">#8,000</p>
+                </div>
+
+                <div>
+                  <span class="col1">
+                    <img src="images/jumbo.png" alt="" />
+                    <h4>Jumbo Pharmacy</h4>
+                  </span>
+                  <p class="col2">05:21pm</p>
+                  <p class="col3">Manual</p>
+                  <span class="col4 category">
+                    <img src="images/health.png" alt="" />
+                    <p>Health</p>
+                  </span>
+                  <p class="col5">#3,500</p>
+                </div>
+
+                <div>
+                  <span class="col1">
+                    <img src="images/shoes.png" alt="" />
+                    <h4>Shoes</h4>
+                  </span>
+                  <p class="col2">04:23pm</p>
+                  <p class="col3">Import</p>
+                  <span class="col4 category">
+                    <img src="images/shopping.png" alt="" />
+                    <p>Shopping</p>
+                  </span>
+                  <p class="col5">#12,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="charts">
+            <img src="images/barChart.png" alt="" />
+            <img src="images/pieChart.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- font Awesome Icon -->
+    <script
+      src="https://kit.fontawesome.com/d84f9ea30a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function menu() {
+        hamburger.classList.toggle("active");
+        sidebar.classList.toggle("active");
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

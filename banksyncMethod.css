@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "inter";
+}
+
+.modal-body,
+.import-file-method {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: none;
+}
+.modal-body > div {
+  /* width: 768px; */
+  width: 54%;
+  background-color: #fefeff;
+  border-radius: 8px;
+}
+
+.modal-title,
+.import-file-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+  border-bottom: 1px solid #5a5a5a;
+}
+.modal-title svg:hover,
+.import-file-title svg:hover {
+  filter: brightness(1.5) sepia(1) hue-rotate(120deg) saturate(3);
+}
+
+.modal-content > form,
+.import-file-content > form {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  padding: 8px 20px;
+  margin: 32px 24px;
+}
+/* input {
+  width: 100%;
+  margin: auto;
+} */
+.modal-content label,
+.import-file-content label {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+.name,
+.cardNo,
+.card-security > div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card-security {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+}
+input::placeholder {
+  font-size: 0.9rem;
+  color: #9b9b9b;
+}
+input,
+.card-security select {
+  width: 100%;
+  font-size: 0.9rem;
+  margin: auto;
+  margin-top: 5px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  outline: 0px;
+  border: 1px solid #9b9b9b;
+}
+.card-security select {
+  text-transform: capitalize;
+}
+input::placeholder {
+  text-transform: capitalize;
+}
+/* .card-security select option {
+  color: red;
+  padding: 10px;
+  margin-bottom: 10px;
+} */
+
+.submit-button {
+  background-color: #162342;
+  padding: 16px 0px;
+  font-size: 16px;
+  color: #fefeff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+.submit-button:hover {
+  background-color: #1b3b84;
+}
+input::placeholder:hover {
+  color: #162342;
+}
+.card-security div {
+  width: 50%;
+}
+/* IMPORT FILE METHOD */
+.import-file-method-sub {
+  height: 540px;
+  background-color: #fefeff;
+  width: 70%;
+}
+.import-file-method-sub h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+.import-file-method-sub > div:nth-child(2) {
+  /* background-color: skyblue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+  /* padding: 0 0 20px; */
+  /* width: 100%; */
+}
+.import-file-method-sub .sub-div1 {
+  width: 52%;
+  /* margin: 0; */
+  /* background-color: green; */
+  /* padding: 0; */
+}
+.import-file-image {
+  width: 30%;
+  height: 400px;
+  box-shadow: 3px 3px 7px #213563;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.import-file-image:hover {
+  transform: scale(1.05);
+}
+.import-file-image img {
+  width: 260px;
+  height: 170px;
+}
